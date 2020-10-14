@@ -77,4 +77,4 @@ Here are a few well established methods that you can use to generate word embedd
    1. **ELMO** for embeddings from language models, by the Allen Institute for AI or 
    1. **GPT-2** or generative pre-training 2 by Open AI.
 
-If you want to use these advanced methods, you can find off the shelf pre-trained models on the Internet. You can fine tune these models using your own corpus to generate high-quality, domain, specific word embeddings. To recap, you now have some tools in your toolbox for creating word embeddings, including some pretty sophisticated new models. That's nice. Up next, I will introduce the continuous bag of words model, that you'll be using for this week's assignment.
+If you want to use these advanced methods, you can find off the shelf pre-trained models on the Internet. You can fine tune these models using your own corpus to generate high-quality, domain, specific word embeddings.
