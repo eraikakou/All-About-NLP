@@ -78,3 +78,16 @@ Here are a few well established methods that you can use to generate word embedd
    1. **GPT-2** or generative pre-training 2 by Open AI.
 
 If you want to use these advanced methods, you can find off the shelf pre-trained models on the Internet. You can fine tune these models using your own corpus to generate high-quality, domain, specific word embeddings.
+
+
+# CBOW model - Continuous Bag-of-Words Model.
+
+## Data preparation
+
+In the data preparation phase, starting with a corpus of text, you will:
+
+- Clean and tokenize the corpus.
+
+- Extract the pairs of context words and center word that will make up the training data set for the CBOW model. The context words are the features that will be fed into the model, and the center words are the target values that the model will learn to predict. Now that you have transformed the corpus into a list of clean tokens, you can slide a window of words across this list. For each window you can extract a center word and the context words. These context and center words will make up the training set that you will use to train the CBOW model.
+
+- Create simple vector representations of the context words (features) and center words (targets) that can be used by the neural network of the CBOW model. **Mapping words to indices and indices to words:** The center words will be represented as one-hot vectors, and the vectors that represent context words are also based on one-hot vectors. To create one-hot word vectors, you can start by mapping each unique word to a unique integer (or index). 
