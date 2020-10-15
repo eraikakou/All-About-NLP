@@ -91,3 +91,12 @@ In the data preparation phase, starting with a corpus of text, you will:
 - Extract the pairs of context words and center word that will make up the training data set for the CBOW model. The context words are the features that will be fed into the model, and the center words are the target values that the model will learn to predict. Now that you have transformed the corpus into a list of clean tokens, you can slide a window of words across this list. For each window you can extract a center word and the context words. These context and center words will make up the training set that you will use to train the CBOW model.
 
 - Create simple vector representations of the context words (features) and center words (targets) that can be used by the neural network of the CBOW model. **Mapping words to indices and indices to words:** The center words will be represented as one-hot vectors, and the vectors that represent context words are also based on one-hot vectors. To create one-hot word vectors, you can start by mapping each unique word to a unique integer (or index). 
+
+**NOTE:**
+To perform matrix multiplication in the next steps, **you actually need your column vectors to be represented as a matrix with one column.** In numpy, this matrix is represented as a 2-dimensional array.
+
+The easiest way to convert a 1D vector to a 2D column matrix is to set its `.shape` property to the number of rows and one column.
+
+## Activation Functions
+
+![image](https://user-images.githubusercontent.com/28102493/96176184-49703480-0f2c-11eb-83b6-ccd0f3c57594.png)
